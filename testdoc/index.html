@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <title>rbtreetest test</title>
+
+
+    <script src="./../rbtree.js" type="text/javascript"></script>
+
+    <script src="rbtree_testutil.js" type="text/javascript"></script>
+    <script src="domchilds.js" type="text/javascript"></script>
+    <link href="rbtreeview.css" rel="stylesheet" type="text/css">
+    <script src="rbtreeview.js" type="text/javascript"></script>
+
+    <link href="rbtreetest.css" rel="stylesheet" type="text/css">
+    <script src="rbtreetest.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+
+    <div class="rb-ctrl">
+      <form class="rb-ctrl-form" id="RbTreeForm" name="rbtreeform">
+        <label class="rb-ctrl-form-rbnodenum" for="RbNodeNum">
+          <span class="rb-ctrl-form-rbnodenum-label">node</span>
+          <input class="rb-ctrl-form-rbnodenum-input" id="RbTreeFormNodeNumInput" type="text" name="rbnodenum"></input>
+        </label><br />
+        <label class="rb-ctrl-form-rbrmnodenum" for="RbRMNodeNum">
+          <span class="rb-ctrl-form-rbrmnodenum-label">rm node</span>
+          <input class="rb-ctrl-form-rbrmnodenum-input" id="RbTreeFormNodeRmNumInput" type="text" name="rbrmnodenum"></input>
+        </label>
+        <label class="rb-ctrl-form-rbsubmit" for="RbSubmit">
+          <input class="rb-ctrl-form-rbsubmit" id="RbSubmit" type="submit" name="rbsubmit" value="Submit" />
+        </label>
+      </form>
+
+      <a id="RbRandomLink" class="rb-ctrl-random" href="#">
+        populate randomly
+      </a>
+      <br />
+      <a id="RbTest1Link" class="rb-ctrl-random" href="#">
+        test insert 1 (77, 44, 33)
+      </a>
+      <br />
+      <a id="RbTest2Link" class="rb-ctrl-random" href="#">
+        test insert 6, rotate left (34, 12)
+      </a>
+      <br />
+      <a id="RbTest3Link" class="rb-ctrl-random" href="#">
+        test insert ??, rotate right (12, 34)
+      </a>
+      <br />
+      <a id="RbTest4Link" class="rb-ctrl-random" href="#">
+        test insert ?? (50,34,12)
+      </a>
+      <br />
+      <a id="RbTest5Link" class="rb-ctrl-random" href="#">
+        test insert ?? (50,12,34) [broken]
+      </a>
+      <br />
+      <a id="RbTest6Link" class="rb-ctrl-random" href="#">
+        test insert ?? (12,34,50)
+      </a>
+      <br />
+      <a id="RbTest7Link" class="rb-ctrl-random" href="#">
+        50,44,77,33,66,33 (add 22 to break)
+      </a>
+      <br />
+      <a id="RbTest8Link" class="rb-ctrl-random" href="#">
+        1,2,3 (add 4 to break)
+      </a>
+      <br />
+      <a id="RbTest9Link" class="rb-ctrl-random" href="#">
+        1,2,3,4,5,6,7,8
+      </a>
+      <br />
+      <a id="RbTest10Link" class="rb-ctrl-random" href="#">
+        1,2,3,4,5,6,7,8,9,10,11
+      </a>
+      <br />
+      <a id="RbTest11Link" class="rb-ctrl-random" href="#">
+        [51,52,53,54,55,56,57,58,59,60,61,49,1,46]
+      </a>
+      <br />
+      <a id="RbTest12Link" class="rb-ctrl-random" href="#">
+        [51,52,53,54,55,56,57,58,59,60,61,49,1,46,33] 48 to break
+      </a>
+      <br />
+      <a id="RbTest13Link" class="rb-ctrl-random" href="#">
+        [70,100,60,120,20,99,64,200,19,82,59,63,65,10] 27 to break
+      </a>
+      <br />
+      <a id="RbTest14Link" class="rb-ctrl-random" href="#">
+        [30,20,40,35,50] rm 20
+      </a>
+      <br />
+      <a id="RbTest15Link" class="rb-ctrl-random" href="#">
+        [30,20,40,35] rm 20
+      </a>
+      <br />
+      <a id="RbTest16Link" class="rb-ctrl-random" href="#">
+        [10,9,8,7,6,5,4,3,2,1] rm 5
+      </a>
+      <br />
+      <a id="RbTest17Link" class="rb-ctrl-random" href="#">
+        [9,8,7,6,5,4] rm 9
+      </a>
+      <br />
+      <a id="RbTest18Link" class="rb-ctrl-random" href="#">
+        [45,19,68,10,39,60,80,8,15,44,50,67,69,96,46,61,93,100] rm 19,8,60
+      </a>
+      <br />
+      <a class="rb-ctrl-random" href="https://www.cs.usfca.edu/~galles/visualization/RedBlack.html">
+        control page
+      </a>
+
+
+    </div>
+
+    <div id="RbTreeContainer" class="rbtree"></div>
+
+    <div id="TestView" class="rbtree"></div>
+
+    <div id="RbNumList" class="rb-numlist">
+
+    </div>
+
+    <script type="text/javascript">
+      rbtreetest.init();
+    </script>
+
+  </body>
+</html>

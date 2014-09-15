@@ -1,0 +1,13 @@
+
+
+.rb-ctrl {
+    position:fixed;
+    top:10px;left:5px;
+    background-color:#afa;
+}
+
+.rb-numlist {
+    position:fixed;
+    bottom:10px;right:5px;
+    background-color:#fff;
+}

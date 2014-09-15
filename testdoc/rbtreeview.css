@@ -1,0 +1,69 @@
+/* Filename: rbtreeview.css
+ * Timestamp: 2014.09.14-20:46:06 (last modified)  
+ * Author(s): Bumblehead (www.bumblehead.com)  
+ */
+
+/* RbTreeContainer 
+ */
+/* circle shape */
+.rbtree-node-shape {
+    display:inline-block;
+    width:50px;
+    height:50px;
+    text-align:center;
+    border:2px solid #ececec;
+    border-radius:25px;
+    color:#fff;
+    position:relative;
+}
+.rbtree-node-shape.red {
+    background-color:#c73e2c;
+}
+.rbtree-node-shape.black {
+    background-color:#474640;
+}
+.rbtree-leaf-right > .rbtree-node > .rbtree-node-shape > .rbtree-node-shape-title:before {
+    content: "\2196";
+    top:-20px;left:0;
+}
+.rbtree-leaf-left > .rbtree-node > .rbtree-node-shape > .rbtree-node-shape-title:before {
+    content: "\2197";
+    top:-20px;right:0;
+}
+
+.rbtree-node-shape-title:before {
+    color:#999;
+    position:absolute;
+}
+.rbtree-node-shape-title {
+    display:block;
+    font-weight:bold;
+    font-size:30px;
+    font-family:arial;
+    margin:0;
+    padding:0;
+}
+.rbtree-node-shape-data {
+    color:black;
+    display:block;
+    font-size:20px;
+    font-family:arial;    
+    margin:0;
+    padding:0;
+    background-color:#fff;
+}
+
+.rbtree {
+    text-align:center;
+}
+
+.rbtree-leaf {
+    white-space:nowrap;
+    margin-top:10px;
+}
+.rbtree-leaf-default {
+    min-height:50px;
+    min-width:50px;
+    vertical-align:top;
+    display:inline-block;
+}
